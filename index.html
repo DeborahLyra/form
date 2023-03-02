@@ -11,90 +11,92 @@
 </head>
 
 <body>
-    <form>
-        <fieldset>
+    <section>
+        <form>
+            <fieldset>
+                <div>
+                    <label>Name:</label>
+                    <input type="text" name="name" id="name">
+                </div>
+
+                <div>
+                    <label>Last Name:</label>
+                    <input type="text" name="lastName" id="lastName">
+                </div>
+
+                <div>
+                    <label>Email</label>
+                    <input type="email" name="email" id="email">
+                </div>
+
+                <div>
+                    <label>Age (optional)</label>
+                    <input type="number" name="age" id="age">
+                </div>
+
+            </fieldset>
+
             <div>
-                <label>Name:</label>
-                <input type="text" name="name" id="name">
+                <label>Do you use any streaming platform?</label>
+                <input type="radio" name="streaming" value="yes" checked>Yes
+                <input type="radio" name="streaming" value="no">No
+                <input type="radio" name="streaming" value="dontKnow">Don't know what it is
             </div>
 
             <div>
-                <label>Last Name:</label>
-                <input type="text" name="lastName" id="lastName">
+                <label>What is your favorite feature of streaming platforms?</label>
+                <select id="selectFav">
+                    <option selected disabled>Select</option>
+                    <option value="">They deliver music and shows faster.</option>
+                    <option value="">You control what you watch and when</option>
+                    <option value="">It takes less storage space than downloading content</option>
+                    <option value="">You can catch up on old favorite shows on your own schedule</option>
+                </select>
             </div>
+
+            <fieldset>
+                <div>
+                    <label>Witch streaming platforms do you use?</label>
+
+                    <input type="checkbox" id="streaming1" name="streaming1" value="Netflix">
+                    <label for="streaming1">Netflix</label>
+                    <input type="checkbox" id="streaming2" name="streaming2" value="PrimeVideo">
+                    <label for="streaming2">Prime Video</label>
+                    <input type="checkbox" id="streaming3" name="streaming3" value="HBOmax">
+                    <label for="streaming3">HBOmax</label>
+                    <input type="checkbox" id="streaming4" name="streaming4" value="Disney+">
+                    <label for="streaming4">Disney+</label>
+                    <input type="checkbox" id="streaming5" name="streaming5" value="PassionFlix">
+                    <label for="streaming5">PassionFlix</label>
+                    <input type="checkbox" id="streaming6" name="streaming6" value="Hulu">
+                    <label for="streaming6">Hulu</label>
+                    <input type="checkbox" id="streaming7" name="streaming7" value="Paramout">
+                    <label for="streaming7">Paramout</label>
+                    <input type="checkbox" id="streaming8" name="streaming8" value="Starsplus">
+                    <label for="streaming8">Starsplus</label>
+                    <input type="checkbox" id="streaming9" name="streaming9" value="AppleTv">
+                    <label for="streaming9">Apple TV</label>
+                    <input type="checkbox" id="streaming10" name="streaming10" value="Spotfy">
+                    <label for="streaming10">Spotfy</label>
+                    <input type="checkbox" id="streaming11" name="streaming11" value="">
+                    <label for="streaming11">Apple Music</label>
+                    <input type="checkbox" id="straming12" name="streaming12" value="AmazonMusic">
+                    <label for="streaming12">Amazon Music</label>
+                    <input type="checkbox" id="straming13" name="straming13" value="others">
+                    <label for="streaming13">Others</label>
+                </div>
+            </fieldset>
 
             <div>
-                <label>Email</label>
-                <input type="email" name="email" id="email">
+                <label for="textArea">Talk more about your experience with the streaming plataforms</label>
+                <textarea name="textArea" id="textArea" cols="30" rows="7"></textarea>
             </div>
 
-            <div>
-                <label>Age (optional)</label>
-                <input type="number" name="age" id="age">
-            </div>
-
-        </fieldset>
-
-        <div>
-            <label>Do you use any streaming platform?</label>
-            <input type="radio" name="streaming" value="yes" checked>Yes
-            <input type="radio" name="streaming" value="no">No
-            <input type="radio" name="streaming" value="dontKnow">Don't know what it is
-        </div>
-
-        <div>
-            <label>What is your favorite feature of streaming platforms?</label>
-            <select id="selectFav">
-                <option selected disabled>Select</option>
-                <option value="">They deliver music and shows faster.</option>
-                <option value="">You control what you watch and when</option>
-                <option value="">It takes less storage space than downloading content</option>
-                <option value="">You can catch up on old favorite shows on your own schedule</option>
-            </select>
-        </div>
-
-        <fieldset>
-            <div>
-                <label>Witch streaming platforms do you use?</label>
-
-                <input type="checkbox" id="streaming1" name="streaming1" value="Netflix">
-                <label for="streaming1">Netflix</label>
-                <input type="checkbox" id="streaming2" name="streaming2" value="PrimeVideo">
-                <label for="streaming2">Prime Video</label>
-                <input type="checkbox" id="streaming3" name="streaming3" value="HBOmax">
-                <label for="streaming3">HBOmax</label>
-                <input type="checkbox" id="streaming4" name="streaming4" value="Disney+">
-                <label for="streaming4">Disney+</label>
-                <input type="checkbox" id="streaming5" name="streaming5" value="PassionFlix">
-                <label for="streaming5">PassionFlix</label>
-                <input type="checkbox" id="streaming6" name="streaming6" value="Hulu">
-                <label for="streaming6">Hulu</label>
-                <input type="checkbox" id="streaming7" name="streaming7" value="Paramout">
-                <label for="streaming7">Paramout</label>
-                <input type="checkbox" id="streaming8" name="streaming8" value="Starsplus">
-                <label for="streaming8">Starsplus</label>
-                <input type="checkbox" id="streaming9" name="streaming9" value="AppleTv">
-                <label for="streaming9">Apple TV</label>
-                <input type="checkbox" id="streaming10" name="streaming10" value="Spotfy">
-                <label for="streaming10">Spotfy</label>
-                <input type="checkbox" id="streaming11" name="streaming11" value="">
-                <label for="streaming11">Apple Music</label>
-                <input type="checkbox" id="straming12" name="streaming12" value="AmazonMusic">
-                <label for="streaming12">Amazon Music</label>
-                <input type="checkbox" id="straming13" name="straming13" value="others">
-                <label for="streaming13">Others</label>
-            </div>
-        </fieldset>
-
-        <div>
-            <label for="textArea">Talk more about your experience with the streaming plataforms</label>
-            <textarea name="textArea" id="textArea" cols="30" rows="7"></textarea>
-        </div>
-
-        <button id="button">Submit</button>
+            <button id="button">Submit</button>
 
 
-    </form>
+        </form>
+    </section>
 </body>
 
 </html
