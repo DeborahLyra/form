@@ -1,16 +1,26 @@
-section {
+*{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
     position: relative;
     height: 100vh;
     background-repeat: no-repeat, no-repeat;
     background-size: cover;
+    
 
 }
 
-section::after {
+body::after {
     content: '';
-    background-image: url("man-watching-tv.webp");
+    background-image: linear-gradient(
+        115deg,
+        rgba(58, 127, 191, 0.886),
+        rgba(45, 179, 220, 0.7)
+      ),url("man-watching-tv.webp");
     background-repeat: no-repeat;
     background-size: cover;
     opacity: 0.5;
@@ -21,3 +31,40 @@ section::after {
     position: absolute;
     z-index: -1;
 }
+
+form{
+    
+    background-color: rgb(151, 222, 246);
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   margin: 0 400px;
+   gap: 40px;
+}
+
+input, select, textarea{
+    border-radius: 5px;
+    border: 1px solid rgb(20, 89, 227);
+}
+
+.group{
+    margin-bottom: 1em;
+}
+
+.group label{
+    display: block;
+    margin-bottom: 0.2em;
+}
+
+fieldset.container .group {
+    float: left;
+    margin-right: 1em;
+}
+
+.group input[type="text"], .group input[type="email"], .group input[type="number"]{
+    display: block;
+    padding: 5px 10px;
+}
+
+
