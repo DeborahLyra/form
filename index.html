@@ -11,84 +11,90 @@
 </head>
 
 <body>
+    <header>
+        <h1>Let's talk about streaming plataforms</h1>
+    </header>
+
     <section>
         <form>
-            <fieldset class="container">
+            <section class="formContainer">
                 <div class="group">
-                    <label for="name">Name:</label>
-                    <input type="text" name="name" id="name" required>
+                    <label for="name"><strong>Name:</strong></label>
+                    <input type="text" name="name" id="name" class="data" required>
                 </div>
 
                 <div class="group">
-                    <label for="lastName">Last Name:</label>
-                    <input type="text" name="lastName" id="lastName" required>
+                    <label for="lastName"><strong>Last Name:</strong></label>
+                    <input type="text" name="lastName" id="lastName" class="data" required>
                 </div>
 
                 <div class="group">
-                    <label for="email">Email</label>
-                    <input type="email" name="email" id="email" required>
+                    <label for="email"><strong>Email</strong></label>
+                    <input type="email" name="email" id="email" class="data" required>
                 </div>
 
                 <div class="group">
-                    <label for="age">Age (optional)</label>
-                    <input type="number" name="age" id="age">
+                    <label for="age"><strong>Age (optional)</strong></label>
+                    <input type="number" name="age" id="age" class="data">
                 </div>
+            </section>
 
-            </fieldset>
 
             <div class="group">
-                <label>Do you use any streaming platform?</label>
-                <input type="radio" name="streaming" value="yes" checked>Yes
-                <input type="radio" name="streaming" value="no">No
-                <input type="radio" name="streaming" value="dontKnow">Don't know what it is
+                <p><strong>Do you use any streaming platform?</strong></p>
+                <input type="radio" name="streaming" value="yes" checked class="radio-input">Yes
+                <input type="radio" name="streaming" value="no" class="radio-input">No
+                <input type="radio" name="streaming" value="dontKnow" class="radio-input">Don't know what it is
             </div>
 
             <div class="group">
-                <label for="selectFav">What is your favorite feature of streaming platforms?</label>
-                <select id="selectFav">
+                <label for="selectFav"><strong>What is your favorite feature of streaming platforms?</strong></label>
+                <select id="selectFav" class="data">
                     <option selected disabled>Select</option>
-                    <option value="">They deliver music and shows faster.</option>
-                    <option value="">You control what you watch and when</option>
-                    <option value="">It takes less storage space than downloading content</option>
-                    <option value="">You can catch up on old favorite shows on your own schedule</option>
+                    <option value="musicandshows">They deliver music and shows faster.</option>
+                    <option value="controlwhatyouwatch ">You control what you watch and when</option>
+                    <option value="lessstorage">It takes less storage space than downloading content</option>
+                    <option value="oldfavoriteshows">You can catch up on old favorite shows on your own schedule
+                    </option>
                 </select>
             </div>
 
-            <fieldset class="container">
-                <div class="check">
-                    <label>Witch streaming platforms do you use?</label>
+            <section class="formContainer">
+                <p><strong>Witch streaming platforms do you use?</strong></p>
+                <div id="groupCheck">
 
-                    <input type="checkbox" id="streaming1" name="streaming1" value="Netflix">
+                    <input type="checkbox" id="streaming1" name="streaming1" value="Netflix" class="check-input">
                     <label for="streaming1">Netflix</label>
-                    <input type="checkbox" id="streaming2" name="streaming2" value="PrimeVideo">
+                    <input type="checkbox" id="streaming2" name="streaming2" value="PrimeVideo" class="check-input">
                     <label for="streaming2">Prime Video</label>
-                    <input type="checkbox" id="streaming3" name="streaming3" value="HBOmax">
+                    <input type="checkbox" id="streaming3" name="streaming3" value="HBOmax" class="check-input">
                     <label for="streaming3">HBOmax</label>
-                    <input type="checkbox" id="streaming4" name="streaming4" value="Disney+">
+                    <input type="checkbox" id="streaming4" name="streaming4" value="Disney+" class="check-input">
                     <label for="streaming4">Disney+</label>
-                    <input type="checkbox" id="streaming5" name="streaming5" value="PassionFlix">
+                    <input type="checkbox" id="streaming5" name="streaming5" value="PassionFlix" class="check-input">
                     <label for="streaming5">PassionFlix</label>
-                    <input type="checkbox" id="streaming6" name="streaming6" value="Hulu">
+                    <input type="checkbox" id="streaming6" name="streaming6" value="Hulu" class="check-input">
                     <label for="streaming6">Hulu</label>
-                    <input type="checkbox" id="streaming7" name="streaming7" value="Paramout">
+                    <input type="checkbox" id="streaming7" name="streaming7" value="Paramout" class="check-input">
                     <label for="streaming7">Paramout</label>
-                    <input type="checkbox" id="streaming8" name="streaming8" value="Starsplus">
+                    <input type="checkbox" id="streaming8" name="streaming8" value="Starsplus" class="check-input">
                     <label for="streaming8">Starsplus</label>
-                    <input type="checkbox" id="streaming9" name="streaming9" value="AppleTv">
+                    <input type="checkbox" id="streaming9" name="streaming9" value="AppleTv" class="check-input">
                     <label for="streaming9">Apple TV</label>
-                    <input type="checkbox" id="streaming10" name="streaming10" value="Spotfy">
+                    <input type="checkbox" id="streaming10" name="streaming10" value="Spotfy" class="check-input">
                     <label for="streaming10">Spotfy</label>
-                    <input type="checkbox" id="streaming11" name="streaming11" value="">
+                    <input type="checkbox" id="streaming11" name="streaming11" value="AppleMusic" class="check-input">
                     <label for="streaming11">Apple Music</label>
-                    <input type="checkbox" id="straming12" name="streaming12" value="AmazonMusic">
+                    <input type="checkbox" id="straming12" name="streaming12" value="AmazonMusic" class="check-input">
                     <label for="streaming12">Amazon Music</label>
-                    <input type="checkbox" id="straming13" name="straming13" value="others">
+                    <input type="checkbox" id="straming13" name="straming13" value="others" class="check-input">
                     <label for="streaming13">Others</label>
                 </div>
-            </fieldset>
+            </section>
 
-            <div>
-                <label for="textArea">Talk more about your experience with the streaming plataforms</label>
+            <div class="group">
+                <label for="textArea"><strong>Talk more about your experience with the streaming
+                        plataforms</strong></label>
                 <textarea name="textArea" id="textArea" cols="30" rows="7"></textarea>
             </div>
 
