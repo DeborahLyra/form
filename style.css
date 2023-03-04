@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -10,10 +10,10 @@ body {
     font-weight: 400;
     font-size: 1em;
     font-weight: 300;
-    
-  }
 
-  body::before {
+}
+
+body::before {
     content: '';
     position: fixed;
     top: 0;
@@ -22,25 +22,26 @@ body {
     width: 100%;
     z-index: -1;
     background: var(--color-darkblue);
-    background-image: linear-gradient(
-        115deg,
-        rgba(105, 197, 215, 0.8),
-        rgba(140, 193, 192, 0.7)
-      ),
-      url(man-watching-tv.webp);
+    background-image: linear-gradient(115deg,
+            rgba(105, 197, 215, 0.8),
+            rgba(140, 193, 192, 0.7)),
+        url(man-watching-tv.webp);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-  }
+}
 
-  header{
+header {
+    font-size: 1em;
     position: absolute;
     margin-top: -4em;
-    margin-left: 30%;
+    width: 100%;
+    text-align: center;
     font-style: italic;
     text-decoration: underline;
-  }
-  form{
+}
+
+form {
     background-color: rgb(92, 184, 184);
     border-radius: 5px;
     display: flex;
@@ -48,21 +49,24 @@ body {
     align-items: center;
     justify-content: center;
     padding: 10px;
-    
+
     margin: 8em 20em 0 20em;
     gap: 2em;
-  }
+}
 
-  input, select, textarea, button {
+input,
+select,
+textarea,
+button {
     font-family: inherit;
     font-size: 1em;
     border-radius: 5px;
     margin-top: 1em;
     background-color: rgb(196, 231, 233);
-    
+
 }
 
-.group{ 
+.group {
     margin-bottom: 1em;
 }
 
@@ -70,27 +74,33 @@ body {
     margin-bottom: 0.3em;
     display: flex;
     align-items: center;
-    
+
 }
 
-.formContainer{
+.formContainer {
     text-align: center;
 }
 
 
 section.formContainer .group {
-    
+
     margin-right: 1em;
 }
 
 
-.group input[type="text"], .group input[type="email"], .group input[type="number"], .group select, .group textarea {
+.group input[type="text"],
+.group input[type="email"],
+.group input[type="number"],
+.group select,
+.group textarea {
     padding: 0.2em;
     border: 2px solid rgba(52, 132, 148, 0.8);
     display: block;
 }
 
-.group input[type="text"], .group input[type="email"], .group input[type="number"]{
+.group input[type="text"],
+.group input[type="email"],
+.group input[type="number"] {
     padding: 0.4em 6em;
 }
 
@@ -99,32 +109,97 @@ section.formContainer .group {
     padding-right: 1em;
 }
 
-#groupCheck{
-    display:block;
+#groupCheck {
+    display: block;
     margin: 15px;
-    
+
 }
 
-.radio-input{
+.radio-input {
     display: inline-block;
-   inline-size: 2em;
+    inline-size: 2em;
 }
 
-textarea{
+textarea {
     width: 100%;
 }
 
-button{
+button {
     font-size: 1.2em;
     background: transparent;
     border: 2px solid rgba(52, 132, 148, 0.8);
     color: #ffffff;
     padding: 0.4em 6em;
     cursor: pointer;
-    
+
 }
 
 button:hover {
     background: rgba(52, 132, 148, 0.8);
-   
+
+}
+
+
+@media (max-width: 1200px) {
+    header {
+        font-size: 0.8em;
+        width: 100%;
+        text-align: center;
+    }
+
+    form {
+        background-color: rgb(92, 184, 184);
+        border-radius: 5px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+
+        margin: 10% 20%;
+        gap: 2em;
+    }
+
+}
+
+@media (max-width: 690px) {
+    header {
+        font-size: 0.5em;
+        width: 100%;
+        text-align: center;
+        margin: -5;
+    }
+
+    form {
+        background-color: rgb(92, 184, 184);
+        border-radius: 5px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+
+        margin: 20% 10%;
+        gap: 2em;
+    }
+
+    .group input[type="text"],
+    .group input[type="email"],
+    .group input[type="number"],
+    .group select,
+    .group textarea {
+        padding: 0.1em;
+        border: 2px solid rgba(52, 132, 148, 0.8);
+        display: block;
+    }
+
+    .group input[type="text"],
+    .group input[type="email"],
+    .group input[type="number"] {
+        padding: 0.1em 3em;
+    }
+
+    .group select {
+        width: 100%
+    }
 }
